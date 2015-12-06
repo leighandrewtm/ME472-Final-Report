@@ -1,0 +1,1215 @@
+\documentclass[11pt,english]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage[toc,page]{appendix}
+\usepackage{gensymb}
+\usepackage{amssymb,amsmath}
+\usepackage[numbers]{natbib}
+\usepackage{graphicx}
+\usepackage{wrapfig,lipsum}
+\usepackage[notlof]{tocbibind}
+\usepackage{array}
+\usepackage{longtable}
+
+\title{Summer 2015 Grand Challenge Program:
+Repurposing Plastic Refuse in Haiti
+}
+{ \author{
+ \textbf{ \footnotesize Falk, Jared}\\\textit{\footnotesize Project Manager}\\
+  \texttt{\footnotesize falkja@rose-hulman.edu}\\
+   \and
+  \textbf{\footnotesize Housman, Stephen}\\\textit{\footnotesize Lead Researcher}\\
+  \texttt{\footnotesize housmasd@rose-hulman.edu}
+  \and\\
+ \textbf{\footnotesize  Lawton, Steven}\\\textit{\footnotesize Lead Speaker}\\
+  \texttt{\footnotesize lawtons@rose-hulman.edu}
+  \and\\
+ \textbf{\footnotesize Mathews, Leigh}\\\textit{\footnotesize Lead Writer}\\
+  \texttt{\footnotesize mathewla@rose-hulman.edu}
+  \and\\
+ \textbf{\footnotesize  Schenck, Christopher}\\\textit{\footnotesize  Lead Constructor}\\
+  \texttt{\footnotesize schenccj@rose-hulman.edu}
+  \and\\
+  \textbf{\footnotesize  Valioulis, Dimitris}\\\textit{\footnotesize  Customer Liaison}\\
+  \texttt{\footnotesize valioud@rose-hulman.edu}
+}}
+
+\date{}
+
+
+\begin{document}
+
+
+\maketitle
+\newpage
+\tableofcontents
+
+
+\newpage
+\section{Nomenclature}
+\begin{itemize}
+\item \textbf{CEDC:} Clemson Engineers for Developing Countries
+\item \textbf{CSP:} Concentrating Solar Power. Any method that focuses 
+the energy of the sun down to a given area, magnifying the amount of 'suns' the reduced area is receiving
+\item \textbf{COMSOL:} A commercially available finite element modelling (FEM) software suite used for  simulation of electrical, mechanical, fluid flow and chemical applications
+\item \textbf{Focal Point:} The point which all the solar energy collected by a parabolic trough is directed towards
+\item \textbf{HDPE:} High Density Polyethylene
+\item \textbf{ID:} Inner Diameter
+\item \textbf{LDPE:} Low Density Polyethylene
+\item \textbf{OD:} Outer Diameter
+\item \textbf{Parabolic Trough:} A type of solar power collection device that uses a parabolic shaped mirror to collect solar energy and direct it all to a single focal line.
+
+
+
+
+
+\end{itemize}
+
+
+
+\newpage
+\section{Introduction}
+The 2014 Rose-Hulman Grand Challenges engineering team completed a project in July 2014 which involved designing and building a solar powered device that converted plastic refuse, namely High Density Polyethylene (HDPE) and Low Density Polyethylene (LDPE), into a usable building material: plastic lumber. The 2015 Grand Challenges team took the concept of melting plastic with solar power and extended and refined it in the following ways: 
+\begin{itemize}
+\item Designed and built a new device, a parabolic solar trough, to melt the plastic
+\item Reworked the molding method to produce a stronger material
+\item Changed the final product from plastic lumber to roofing shingles
+\end{itemize} 
+
+\noindent The report will first outline the motivations for taking on this project, highlighting the current need for the project in Haiti. It will then document the material properties of the plastic roofing shingle before detailing the specifications of the finished prototype used for the melting of the plastic. A discussion on product readiness, possible improvements to the device and a general summary will be provided at the end. 
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.40\textwidth]{finalprototype.JPG}
+\caption{The 2015 Rose-Hulman Grand Challenges team with the completed prototype}
+\end{figure}
+
+\subsection{Motivation for Project}
+As the poorest country in the Western Hemisphere, the Republic of Haiti has been facing great chronic issues such as food insecurity and hunger. A large factor diminishing the quality of life has been the frequent earthquakes combined with the weak infrastructure that leads to multiple casualties and home losses. The strength of a Haitian's home is very much dependent on the family's income - and considering the average annual income of \$350, most of the buildings are built out of mud bricks or in the best case concrete, and the roofs are usually made out of metal sheets \cite{income}. Another important issue that Haiti is facing is the amount of litter and waste scattered in parks, paths and in the middle of large populated areas. Port-au-Prince, the Haitian capital, has a very inefficient waste collection system and the concentrated trash has been blocking and overflowing sewers, as seen in Figure \ref{fig:bagspic}, creating serious health problems as rotting solid waste is a significant methane source. A large amount of the total waste is plastic materials and even with the efforts of the Haitian government to forbid the import of polyethylene and polystyrene, the piles of waste have been rising \cite{raymont2014}. One of the Grand Challenges of Engineering is to restore and improve urban infrastructure, and our team decided that if this challenge was solved combined with the waste issue, it could have a large impact in Haiti.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.70\textwidth]{plastichaiti.jpg}
+\caption{A canal system in Port Au Prince filled with plastic refuse \cite{bags}}
+\label{fig:bagspic}
+\end{figure}
+
+
+ 
+\subsection{Targeted Product: Roofing Shingles}
+Upon research and collaboration with Clemson Engineers for Developing Countries (CEDC), a replacement for corrugated iron as a roofing material was identified as a priority building material to develop. This was seen by our group to be a highly feasible idea, and with minimal modifications to the molding method employed from the original project \cite{piens2015engineering} and, as seen in Figure \ref{fig:shingles}, prototype shingles were able to be successfully made and tested. \\
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.5\textwidth]{shingles.JPG}
+\caption{Arrangement of molded shingles}
+\label{fig:shingles}
+\end{figure}
+
+Table \ref{tab:shingle} gives the basic features of the current shingle being manufactured. It is anticipated that further work will be completed on the shingles as part of a separate ongoing project at Rose-Hulman. 
+
+
+\begin{table}[ht!] 
+\caption{Material Properties of a Single Plastic Roofing Shingle}\label{tab:shingle}
+\begin{center} \begin{tabular}{ | l| l |} \hline 
+\textbf{Property} & \textbf{Value} \\ \hline
+\textbf{Size (approx.)}& 7"x11"x1/2"\\ \hline 
+\textbf{Number of plastic bags (approx.)} & 25-30 \\ \hline 
+\textbf{Weight (approx.)} & 100g \\ \hline 
+\textbf{Yield Stress}  &  2.89 MPa\\ \hline 
+\textbf{Ultimate Tensile Strength }& 8.02 MPa \\ \hline 
+\textbf{Melting Temperature} & 140\degree C \\ \hline
+\textbf{Molding Time (approx.)} & 40 minutes \\ \hline 
+\end{tabular} \end{center}
+\end{table}
+\newpage
+\noindent The final mold is 7"x11" and resembles the size of some ceramic roofing shingles. Additionally, limitations on melting capacity aside, any required size would be able to be molded with the material. The material proved to be quite resilient, and is able to withstand stresses up to 8 MPa without failing (see Appendix \ref{App:AppendixC} for full testing results and methods).  While all initial tests have proved to be highly promising, further testing will be required to determine the longevity of plastic as a roofing material.  
+
+\section{Design of Manufacturing Device}
+\subsection{Project Requirements}
+In order for a new product to supplant existing ones, it needs to provide irresistible advantages over the competing product. For this particular project the following conditions need to be met:\\
+\textbf{ The Device:}
+\begin {itemize}
+
+\item \textbf{Reliably works:} The device is robust, weather-proof and provides consistent output in sunny weather. 
+\item \textbf{The device is user-friendly:} It provides a safe and pain-free overall experience for the operator, otherwise it will not be used. 
+\item \textbf{Outputs appreciable amounts of material daily:} This is critical, otherwise interest will eventually wane and the process will revert to more efficient but less environmentally friendly methods (i.e. burning charcoal) to melt the plastic. This would have negative environmental consequences for the Haitian people, and would take away from the overall spirit of the project.  
+\item \textbf{Is constructed and maintained on the ground in Haiti:} Although not necessarily needing to be manufactured in Haiti, it needs to be able to be put together over there. Maintenance of the device needs to be simple and issues that arise can be easily diagnosed and repaired by the local workers. 
+
+\end{itemize}
+\textbf{The Roofing Shingles:}
+\begin{itemize}
+
+\item \textbf{Provide a competitive alternative to current roofing materials:} They are cost-effective to manufacture, easily installed, provide superior insulation and have a comparable lifetime and can be seen as a viable alternative to corrugated iron roofs. 
+\end{itemize}
+
+
+
+\subsection{Features of  Device}
+ Our team has developed a solar trough system, which uses a reflective, parabolic shaped surface to focus a large amount of solar energy down to a given focal point. The device was chosen over other competing designs for a variety of reasons, with the most crucial factors being ease of construction, operation and maintenance. The full concept selection process is able to be reviewed in Appendix \ref{App:designselection} and the schematic of the final prototype can be found in Figure \ref{fig:finalproto}.\\
+\noindent This section will describe in detail the features of the prototype, and aims to answer any technical questions about the device's specifications. Table \ref{tab:device} gives an overview of the specifications, with the following sections going into further detail on each part. \\  
+ Being a parabolic trough, the prototype shares many general features with any standard industrial concentrating solar power (CSP) device. However, the two important aspects that it shares with any CSP is being able to track the trajectory of the sun in two axes while also heating a given area significantly higher than the ambient temperature by concentrating solar energy down to a focal point. These features are codependent and critical for the successful operation of the parabolic trough. Figure \ref{fig:troughdiagram} provides a visual overview of the general operation.\\ 
+ \begin{figure}[ht!]
+\centering
+\includegraphics[width=.7\textwidth]{troughdiagram.png}
+\caption{Basic diagram of a solar parabolic trough \cite{conctrough}}
+\label{fig:troughdiagram}
+\end{figure}
+\newpage
+
+
+The concept of using parabolic shaped troughs to collect solar energy is not an original or recent idea. It is a concept with proven results, and has been used in industrial applications for many decades \citep{thomas1993parabolic}, with some designs capable of reaching temperatures as high as 500\degree C \cite{eusolaris}.
+  \begin{figure}[ht!]
+\centering
+\includegraphics[width=1.1\textwidth]{final}
+\caption{Final Prototype}
+\label{fig:finalproto}
+\end{figure}
+ 
+\begin{table}[ht!] 
+\caption{List of device features}\label{tab:device}
+\begin{center} \begin{tabular}{ | l|| l | l|} \hline 
+\textbf{Feature} & \textbf{Desired}& \textbf{Device} \\ \hline\hline
+\textbf{Solar Concentrating Power} & Maximize (40 'suns' minimum)  &40 'suns' (2500W)\\ \hline 
+
+\textbf{Operating Angles}&0-180\degree & 35-145\degree  \\ \hline \textbf{Reflective Surface}& Mylar\textsuperscript{\textregistered} ($\Gamma$ =  .87) & $\Gamma$ >.8\\ \hline \textbf{Operating Temperatures} & 140-180\degree C & >135\degree C \\ \hline
+\textbf{Device Footprint} & Minimize  &  8'x8' \\ \hline
+\textbf{Height} & 3'>Height>6' &5' 6" \\ \hline
+\textbf{Operators required}  & 1 & 2\\ \hline
+\textbf{Throughput} & Maximize & 4-6 shingles/hr\\ \hline 
+\textbf{Cost} & <\$450 & \$456 \\  \hline 
+\end{tabular} \end{center}
+\end{table}
+
+
+
+\subsubsection*{Orienting Mechanisms}
+When completing an initial needs analysis for the project, one of the highest priorities for the device was for it to be easily operable by an average Haitian. For this to happen the device needed to be:
+\begin{itemize}
+\item \textbf{Rotatable}. The device is able to rotate in the azimuthal direction depending on the time of day and requirements of the user. To achieve this, pneumatic tires were installed and used to move the  device around. This offered a significant usability advantage over last year's design. Additionally, the fitting of wheels reduced the number of required operators on this device from 6 to 2. \item \textbf{Easily tilted.}  The trough is designed to rotate about the pipe, allowing for the device to rotate about a point on or near its center of gravity at all times. This enables extremely simple adjustments as the trough requires little to no force to move into position. Additionally, the device is able to rotate in a 110\degree arc, allowing it to track the sun in Indiana from 10am-6pm in July,  allowing over 8 hours of potential operating hours. This will vary between locations and seasons, but it gives a good indication of its tracking capability. \item \textbf{Capable of fine adjustment.} The locking mechanism used for the tilting device was simple, requiring only pre-drilled holes in the frame and trough, and 2 bolts to lock each side into position. This arrangement is shown in Figure \ref{fig:orientationtrough1}.
+
+\begin{figure}[ht!]%
+    \centering
+    \subfloat[Bolt ready to be inserted. Trough currently able to be swung freely]{{\includegraphics[width=.25\textwidth]{prelock} }}%
+    \qquad
+    \subfloat[Bolt inserted, trough is now locked into position]{{\includegraphics[width=.25\textwidth]{postlock} }}%
+    \caption{Trough locking mechanism. Note holes to right of vertical post; the bolt passes through these holes (1" apart), locking the device into position}
+\label{fig:orientationtrough1}
+\end{figure}
+\end{itemize}
+\subsubsection*{Portability}
+Designed with the desire for the device to be highly portable, four pneumatic tires were installed on the base of the frame. This allowed for the device to move easily, both into position for operation and also transporting to a new location/away for storage. 
+\subsubsection*{Operating Temperatures}
+Modeling the device as shown in Appendix \ref{App:modeling}, the device was designed with a target operating temperature of 160\degree C. This temperature allowed for the melting of HDPE and LDPE, two of the most abundant plastics in Haiti\cite{sarker2011abundant}. This target temperature was surpassed, with initial testing measuring the temperature of the inside of the pipe being at over 180\degree C. Consistently the device has operated at over 140\degree C, which is comfortably over the melting temperatures of both HDPE(135\degree C) and LDPE (115\degree C) \cite{troughton2008handbook}.
+\subsubsection*{Throughput}
+A critical feature of the system is the plastic extraction method. When melted, the viscosity of the plastic is very similar to gum, and when pushed through a pipe it becomes significantly harder to push through the longer the pipe is. This property of the melted plastic resulted in several initial ideas needing to be discarded in favor of a 'batch processing' method, where aluminum hinged canisters were filled with plastic and then inserted into the steel pipe. \\
+
+\noindent The aluminum capsules shown in Figure \ref{fig:canister} have an OD of 1 1/2", making them 1/4" smaller than the ID of the steel pipe. This allows for easy insertion and removal of the plastic, at the expense of lower melting volume per length of pipe and slight time losses compared to a simple extrusion method. 
+
+
+
+ \begin{figure}[ht!]%
+    \centering
+    \subfloat[Capsule open]{{\includegraphics[width=.25\textwidth]{canisteropen} }}%
+    \qquad
+    \subfloat[Capsule closed]{{\includegraphics[width=.25\textwidth]{canisterclosed} }}%
+    \caption{The capsule model used for melting the plastic}%
+    \label{fig:canister}%
+\end{figure}
+
+\subsubsection*{Materials}
+The device was designed with simplicity and ease of construction as a priority, and the materials used reflect this desire.
+The following materials were used in the construction of the device:
+\begin{itemize}
+\item \textbf{Wood}. Being a material that is cheap, strong and an easy material for building with, 1.5"x3.5" pine studs and 1/2" sheets of plywood were used as the primary building material for the frame of the device. The high usage of wood for the construction was recognized as a potential issue in Haiti, but using wood was seen as a way to build and test the functionality of the prototype within the time constraints of a five week design and build. Once the design is optimized then it will be possible to find a way to use more suitable materials in Haiti. 
+\item \textbf{Mylar\textsuperscript{\textregistered}}. Aluminum was initially chosen as the reflective material for the trough, however upon testing it was found that it both did not have a high enough emissivity and was not a smooth enough surface to focus the solar energy with the required levels of accuracy. so it needed to be replaced with Mylar\textsuperscript{\textregistered}. Chosen over alternative materials for its excellent directed reflectivity and low weight, it was used as the collector surface for the parabolic trough. As it is quite flimsy and easily tearable, aluminum sheeting was used as a backing for it. 
+\item \textbf{Aluminum Sheeting}. The aluminum was then used as the backing for the Mylar\textsuperscript{\textregistered}, as it provided extra strength and resistance against tearing that Mylar\textsuperscript{\textregistered} requires, while still being flexible enough for conform to the required parabolic curve. 
+
+\item \textbf{Steel Pipe}. The steel pipe is placed at the focal point of the trough, heating itself up to a high enough temperature that plastic can be melted inside. A 2" OD (1 3/4" ID) pipe was chosen, as it was both readily available and we wished to maximize our throughput of melted plastic, of which our COMSOL  . As the pipe is used also as the pivot for the trough, the structural strength and robustness of the pipe was also a factor for its inclusion in the final prototype.    
+\item \textbf{Aluminum Pipe}. Used as material for the plastic canisters inserted into the steel pipe. Chosen for its ability to conduct heat quickly through to the plastic and its relatively low price. 
+\item \textbf{Black Paint}. Applied to the bottom half of the steel pipe in order to aid heat absorption. 
+\item \textbf{Insulation}. In order to reduce heat loss through the steel pipe, 1" fiberglass pipe insulation is installed over the top half of the pipe. This allows for the pipe to both heat up quicker and cool down slower. 
+\item \textbf{Concrete}. Used as a form to mold the melted plastic, concrete was seen as a durable, cheap and scalable method of molding the plastic into the desired shape, with the concrete able to be locally sourced in Haiti.  
+ 
+
+\end{itemize}
+\newpage
+\subsubsection*{Cost}
+
+A requirement of the project was for the cost of this device to be minimized as much as practicable. This restriction was to ensure that the device would be affordable to a Haitian entrepreneur who would wish to use the device to start up a business. The device has been costed at \$456 dollars currently (not including labor costs) and a breakdown of the total cost can be seen in Table \ref{tab:materialcosts}. Further efficiencies (for example, replacing the aluminum backing with a cheaper material, removing excess wood on trough sides)have been identified, which will reduce the cost further. 
+
+\begin{table}[ht!] 
+\caption{Breakdown of Total Cost of Materials}\label{tab:materialcosts}
+\begin{center} \begin{tabular}{ | l| c | c|c|} \hline \textbf{Material} & \textbf{Unit Cost} (\$)& \textbf{Quantity}& \textbf{Total Cost} (\$) \\ \hline 
+Plywood & \$12.50 & 4& \$50\\ \hline 
+Pine Studs (3.5"x1.5"x8') & \$2.50 & 8& \$20\\ \hline
+Aluminum Sheet& \$50 & 50'x20" roll &\$50 \\ \hline 
+Mylar\textsuperscript{\textregistered} Blankets& \$2 &4  &\$8 \\ \hline 
+Steel Pipe& \$20 &1&\$20\\ \hline 
+Aluminum Pipe & \$20 &1&\$20  \\ \hline
+Rolling Pipe& \$5 &1&\$5\\ \hline 
+Extrusion Pipe& \$10 &1&\$10\\ \hline 
+Wheels & \$15&4&\$60  \\ \hline
+Hinges & \$2&10&\$20  \\ \hline
+Clamps & \$10 &4 &\$40  \\ \hline
+Hinges & \$2&10&\$20  \\ \hline
+Black Paint & \$5&1&\$5\\ \hline
+Hose Clamps & \$.50 &6 &\$3  \\ \hline
+Spray Glue & \$5&1&\$5\\ \hline
+Screwdrivers & \$3 &1 &\$3  \\ \hline
+Cotton Gloves & \$2&2&\$4\\ \hline\hline
+\textbf{Total} & - & - & \textbf{\$456}\\ \hline \end{tabular} \end{center}
+\end{table}
+
+\newpage
+
+\section{Device Construction}
+
+\begin{center}
+\fbox{\begin{minipage}{35em}
+\textbf{Caution: Remember to wear safety glasses at all times while assembling the device and using power tools} 
+\end{minipage}}
+\end{center}
+
+\noindent The kit able to be shipped to Haiti consists of the following materials:
+
+\begin {table}[ht!]\label{table:items} \caption{Materials List}\begin{center} \begin{tabular}{ | l| l |l|} \hline \textbf{Label} &\textbf{Item} & \textbf{Qty} \\ \hline 
+F1  &  8' pine studs & 2\\ \hline 
+F2 & 4' pine studs & 4 \\ \hline
+F3 & Angled bracing & 4 \\ \hline
+F4 & Pipe supports & 4 \\ \hline
+F5 & 2' pine studs & 6 \\ \hline
+F6 & 67' pine stud & 1 \\ \hline
+F7 & Plywood bracing & 2 \\ \hline
+F8 & Plywood bracing (small) & 4 \\ \hline
+T10  &  Trough sides & 3\\ \hline 
+T11 & Side supports& 2 \\ \hline
+T12 & Side stiffeners & 4 \\ \hline
+T13 & Top side attachment blocks & 12 \\ \hline
+T14 & 2' Underside attachment blocks & 12 \\ \hline
+M15 & 2" OD Steel Pipe & 1 \\ \hline
+M16 & 3" Wood screws  & 75 \\ \hline
+M17 & 1" Wood screws & 75 \\ \hline
+M18 & 1/2" Wood screws & 50 \\ \hline
+M19 & Wheels & 4 \\ \hline
+M20 & Aluminum Sheets & 5 \\ \hline
+M21 & Mylar\textsuperscript{\textregistered} Sheets & 2 \\ \hline
+M22 & Mold (Shingles) & 2 \\ \hline
+M23 & Clamps & 4 \\ \hline
+M24 & Extruding Rod & 1 \\ \hline
+M25 & Rolling Pipe & 1 \\ \hline
+M26 & Pipe Insulation 1" & 2 \\ \hline
+M27 & Hose Clamps 1" & 6 \\ \hline
+\end{tabular} \end{center}
+\end{table}
+
+\newpage
+\noindent In order to construct and operate the device the following materials are also required:
+\begin {table}[ht!]\label{table:extraitems} \caption{Extra Materials Required}\begin{center} \begin{tabular}{ | l| l |l|} \hline \textbf{Label} &\textbf{Item} & \textbf{Qty} \\ \hline 
+M28  &  Electric Drill & 2\\ \hline 
+M29 & Phillips Head Drill Bit & 2 \\ \hline
+M30 & Safety Glasses & 2 \\ \hline
+M31 & Heat-resistant gloves & 2 \\ \hline
+M32 & Respirator (Recommended) & 2\\ \hline
+M33 & Tape Measure & 1\\ \hline
+\end{tabular} \end{center}
+\end{table}
+\newpage
+\subsection{Frame}
+
+\noindent A model of the constructed frame is shown in Figure \ref{fig:baseAnnotated}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.9\textwidth]{baseAnnotated.jpg}
+\caption{Assembled frame}
+\label{fig:baseAnnotated}
+\end{figure}
+\begin{enumerate}
+
+
+\item Lay both 8’ pine studs (F1) in parallel, and approx. 4’ apart with ends horizontal to each other as shown in Figure \ref{fig:Layout}a.
+
+\item Place all four F2 pieces perpendicular to F1 in the arrangement shown in Figure \ref{fig:Layout}b.  Do not screw in yet.
+
+\begin{figure}[ht!]%
+    \centering
+    \subfloat[Step 1]{{\includegraphics[width=.5\textwidth]{PicPic1} }}%
+    \qquad
+    \subfloat[Step 2]{{\includegraphics[width=.5\textwidth]{Picture_3} }}%
+    \caption{Steps 1 and 2}%
+    \label{fig:Layout}%
+\end{figure}
+
+\newpage
+\item Gather all six F5 pieces and the F6 piece. Place the F6 piece on a new section of ground  
+
+
+\item Position A1 and C1 flush at both ends of F6. Have the end labeled "Bot" touching F6. Align so that side labeled "outside" is facing away from the middle, as shown in Figure \ref{fig:step 4 and 5}b. Now screw into place using two 3" screws.  
+
+\item Next to the previous two F5 pieces from step 4, position A2 next to A1 and C2 next to C1: once again with the end label "Bot" touching F6. Place a half-inch thick sheet of plywood, such as T12, between A1 and A2 to measure the distance between the two as shown in Figure \ref{fig:step 4 and 5}b. Screw into place and remove plywood, the bottom should resemble Figure \ref{fig:step 4 and 5}.   
+ \begin{figure}[ht!]%
+    \centering
+    \subfloat[Step 4]{{\includegraphics[width=.3\textwidth]{Picture_2} }}%
+    \qquad
+    \subfloat[Step 5]{{\includegraphics[width=.3\textwidth]{Pic_5} }}%
+    \caption{Steps 4 and 5}%
+    \label{fig:step 4 and 5}%
+\end{figure}
+
+\item Measure 28" from the inside edge of bottom of C2, from step 5. Place an outside edge of an F5 labeled "BB" on this mark. Once again, with "Bot" touching F6. Screw into place using two 3" screws. Measure opposite side of "BB" using plywood, as is shown in step 5 and place the remaining F5 piece here, with the end labeled "Bot" touching F6. Screw into place two 3" screws. This middle part should resemble Figure \ref{fig:step 6}a. The completed base should look like Figure \ref{fig:step 6}b.   
+
+ 
+\begin{figure}[ht!]%
+\centering
+    \subfloat[Step 6a]{{\includegraphics[width=.3\textwidth]{Pic_1} }}%
+    \qquad
+    \subfloat[Step 6b]{{\includegraphics[width=.3\textwidth]{Picture62} }}%
+    \caption{Step 6}%
+    \label{fig:step 6}%
+\end{figure}
+
+
+\item Inside the base from step 5 and 6 place a triangular support along each of the four corners, as shown in Figure \ref{fig:cornerpieces}a. Use two 1-1/2" screws for each support. The completed base should resemble Figure \ref{fig:cornerpieces}b.   
+
+
+\begin{figure}[ht!]%
+\centering
+    \subfloat[Step 7a]{{\includegraphics[width=.3\textwidth]{Picture_5} }}%
+    \qquad
+    \subfloat[Step 7b]{{\includegraphics[width=.3\textwidth]{Pic4} }}%
+    \caption{Step 7}%
+    \label{fig:cornerpieces}%
+\end{figure}
+
+\item Attach F7 to the outside of A1 using two 1" screws as shown in Figure \ref{fig:step 8}.  
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.35\textwidth]{Pic7.PNG}
+\caption{Step 8}
+\label{fig:step 8}
+\end{figure}
+
+
+\item Place F6 in between F1 and the inside F2’s making sure that it is centered both laterally and vertically, as shown in Figure \ref{fig:step 9}.
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.35\textwidth]{Picture67.PNG}
+\caption{Step 9}
+\label{fig:step 9}
+\end{figure}
+\newpage
+\item Center F2 with F7A1, as shown in Figure \ref{fig:step 10}b, and screw in a 1” screw from plywood side where marked, for both corners of the plywood. Repeat for other F2 piece and F7C1, as shown in Figure \ref{fig:step 10}a. 
+
+\begin{figure}[ht!]%
+\centering
+    \subfloat[Step 10a]{{\includegraphics[width=.3\textwidth]{Picture_14} }}%
+    \qquad
+    \subfloat[Step 10b]{{\includegraphics[width=.3\textwidth]{Picture_11} }}%
+    \caption{Step 10}%
+    \label{fig:step 10}%
+\end{figure}
+
+\item Align F4 with F5, so that F4 is flat on the ground, and screw into F2 with two 3” screws as shown in Figure \ref{fig:step11}. Repeat for the other side.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.35\textwidth]{Picture_12.PNG}
+\caption{Step 11}
+\label{fig:step11}
+\end{figure}
+
+\item Center F1 with the two F2 pieces as shown in Figure \ref{fig:step 12}a and screw in two 3” screws from F1 into F2 on each side. Repeat for the 2nd F1 piece, as shown in Figure \ref{fig:step 12}b.
+
+\begin{figure}[ht!]%
+\centering
+    \subfloat[Step 12a]{{\includegraphics[width=.3\textwidth]{Picture_18} }}%
+    \qquad
+    \subfloat[Step 12b]{{\includegraphics[width=.3\textwidth]{Picture_19} }}%
+    \caption{Step 12}%
+    \label{fig:step 12}%
+\end{figure}
+\newpage
+\item Place two F3, slant side up and put the slant along F4 and the bottom between the two F2 pieces. Put two 3" screws in from the top (F3 into F4) and two 3" screws on the bottom (inside F2 into F3).  Repeat for the other side, as shown in Figure \ref{fig:step 13}. 
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.4\textwidth]{Picture_27.PNG}
+\caption{Step 13}
+\label{fig:step 13}
+\end{figure}
+
+
+\item Place F2 outside of F4 with the same orientation as the other F2 in step 10, as shown in Figure \ref{fig:step 14}b and use two 3” screws to screw F1 into F2 on each end of the F2, as shown in Figure \ref{fig:step 14}a.
+
+
+\begin{figure}[ht!]%
+\centering
+    \subfloat[Step 14a]{{\includegraphics[width=.3\textwidth]{Pic72} }}%
+    \qquad
+    \subfloat[Step 14b]{{\includegraphics[width=.3\textwidth]{Pic8} }}%
+    \caption{Step 14}%
+    \label{fig:step 14}%
+\end{figure}
+
+\newpage
+\item Attach F8 along an edge of an outside F5 piece, flush with the top of the F5, straight to the F4 piece. Repeat for each outside edge of the two outside F5 pieces, as shown in Figure \ref{fig:step 15}.
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.3\textwidth]{Picture_32.PNG}
+\caption{Step 15}
+\label{fig:step 15}
+\end{figure}
+
+\item Tilt device on its side and hold caster of wheel up to one set of connections of F1 and F2. Screw in a washer in each hole of the caster as shown in \ref{fig:step 16}a. Repeat for all four wheels, with the two wheels that can rotate on the same F2 pieces. The frame is now complete, and should resemble Figure \ref{fig:step 16}b.   
+
+ \begin{figure}[ht!]%
+    \centering
+    \subfloat[Step 16a]{{\includegraphics[width=.3\textwidth]{Picture101} }}%
+    \qquad
+    \subfloat[Step 16b]{{\includegraphics[width=.3\textwidth]{Picture200} }}%
+    \caption{step 16}%
+    \label{fig:step 16}%
+\end{figure}
+\newpage
+\textbf{Trough}
+
+A model of the completed trough is shown in Figure \ref{fig:assembled}.
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.9\textwidth]{Cad_side_supports}
+\caption{Assembled Trough}
+\label{fig:assembled}
+\end{figure}
+
+\newpage
+\item  Block wheels so that the device does not roll. Put the approximate middle of the bottom of T10A in between A1 and A2 with the side labeled inside facing the middle as shown in Figure \ref{fig:step17}a. Repeat with T10C and with T10B, T10B does not have a specific orientation. The device should resemble Figure \ref{fig:step17}b.
+
+\begin{figure}[ht!]%
+    \centering
+    \subfloat[Step 17a]{{\includegraphics[width=.5\textwidth]{Trough1} }}%
+    \qquad
+    \subfloat[Step 17b]{{\includegraphics[width=.5\textwidth]{Trough3} }}%
+    
+    \caption{Step 17}%
+    \label{fig:step17}%
+\end{figure}
+\newpage
+\item   Caution, This next step requires the lifting of heavy objects and may require and extra person to assist. Read all of Step 18 before proceeding! Lift T10A so the pipe hole aligns with the hole in F4. Slide the pipe through the F4 hole then through the T10A hole, as shown in Figure \ref{fig:step 18 1}a. Once through the T10A hole continue to hold T10A up and lift T10B so that the pipe hole is in line with the pipe, and slide pipe through T10B, as shown in Figures \ref{fig:step 18 1}b and \ref{fig:step 18 2}c. T10A no longer needs to be held, continue to hold T10B and lift T10C so the pipe hole aligns with the pipe and the F4 hole. Slide the pipe through both remaining holes, as shown in Figure \ref{fig:step 18 2}d, and have roughly the same amount of overhang of pipe on the outsides of T10A and T10B. All T10's should now be supported by the pipe with the bottoms still inside the corresponding F5 pairs. 
+\\ \textbf{Note: the black side of the pipe should be facing the ground.}  
+
+\begin{figure}[ht!]%
+    \centering
+    \subfloat[Step 18a]{{\includegraphics[width=.3\textwidth]{Trough5} }}%
+    \qquad
+    \subfloat[Step 18b]{{\includegraphics[width=.3\textwidth]{Trough6} }}%
+    \caption{Step 18}%
+    \label{fig:step 18 1}%
+\end{figure}
+
+\begin{figure}[ht!]%
+    \centering
+    \subfloat[Step 18c]{{\includegraphics[width=.3\textwidth]{Trough4} }}%
+    \qquad
+    \subfloat[Step 18d]{{\includegraphics[width=.3\textwidth]{Trough19} }}%
+    \caption{Step 18 continued}%
+    \label{fig:step 18 2}%
+\end{figure}
+\clearpage
+\newpage
+\item   Insert bolt into the holes in A2 and A1, the bolt should also run through T10A as shown in Figure \ref{fig:step19}. Repeat for C1 and C2. The device should now not rotate about the pipe. Align A2 and C2 with the markings. Bolt does not go all the way through and is placed in the center hole.  
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.3\textwidth]{Trough8.PNG}
+\caption{Step 19}
+\label{fig:step19}
+\end{figure}
+
+\item  Place T12 between T10A and T10B with the face labeled "outside" facing out in the area shown in Figure \ref{fig:step20}b.This is on the side of the device labeled "Side 1" as shown in Figure \ref{fig:step20}a. These are flat against two T13s and 5" from the top of T10A and T10B. There are markings on the T10s and T13s for where the T12 should be placed. Screw where indicated using four 1" screws. Repeat between T10B and T10C on the same side. \textbf{Only apply these to one side}, as shown in Figure \ref{fig:step20}b. 
+
+\begin{figure}[ht!]%
+    \centering
+    \subfloat[Step 20a]{{\includegraphics[width=.4\textwidth]{Trough13} }}%
+    \qquad
+    \subfloat[Step 20b]{{\includegraphics[width=.4\textwidth]{Trough10} }}%
+    \caption{Step 20}%
+    \label{fig:step20}%
+\end{figure}
+\newpage
+\item   Place T11-1 along the slanted edges of all three T10's, with the sides marked T11-1A matching up with the corresponding sequencing on T10A, as shown in Figure \ref{fig:step21}a.  There should be a small overhang of plywood over the outside edge of T10A, as shown in Figure \ref{fig:step21}b. The Top edge of T11 should be flush with the top edge of the top T14's. Hold in place and screw where indicated using twelve 1" screws. 
+
+\begin{figure}[ht!]%
+    \centering
+    \subfloat[Step 21a]{{\includegraphics[width=.35\textwidth]{Trough11} }}%
+    \qquad
+    \subfloat[Step 21b]{{\includegraphics[width=.35\textwidth]{Trough14} }}%
+    \caption{Step 21}%
+    \label{fig:step21}%
+\end{figure}
+\newpage
+\item   Put 1” fiberglass insulation on top of pipe between T10A and T10B, as shown in Figure \ref{fig:step22}. 
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.5\textwidth]{Trough26.PNG}
+\caption{Step 22}
+\label{fig:step22}
+\end{figure}
+
+\item   Use a hose clamp about 6” from a side as shown in Figure \ref{fig:step23}a on both sides of the section. It should look like Figure \ref{fig:step23}b. 
+
+\begin{figure}[ht!]%
+    \centering
+    \subfloat[Step 23a]{{\includegraphics[width=.4\textwidth]{Trough25} }}%
+    \qquad
+    \subfloat[Step 23b]{{\includegraphics[width=.4\textwidth]{Trough26} }}%    
+    \caption{Step 23}%
+    \label{fig:step23}%
+\end{figure}
+.JPG
+\item   Repeat steps 22 and 23 between T10B and T10C.
+\newpage\newpage
+\item   Repeat steps 20 and 21 on "Side 2" of the device. This should close off the middle of the device. Should resemble Figure \ref{fig:step25}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.4\textwidth]{Trough18.PNG}
+\caption{Step 25}
+\label{fig:step25}
+\end{figure}
+
+\item   Caution: when handling Aluminum, wear gloves, as the edges are sharp. Cut Aluminum roll into 68" long sheets, cut one at a time for as many are necessary, as shown in Figure \ref{fig:step26}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.5\textwidth]{Trough28.PNG}
+\caption{Step 26}
+\label{fig:step26}
+\end{figure}
+
+\newpage
+\item   Insert aluminum sheets lengthwise one at a time starting from the top of the parabola. Note: make sure not to pull too far on one side or the aluminum sheet will slide out of other T10 piece.   
+\item   Cut from edge to T10 every 4” of the aluminum overhang along the width of the sheet, This should form 4" tabs.
+\item   Fold every other tab down and pull tight so sheet is taught and screw into T10A or T10C with 1/2" screws, as shown in Figure \ref{fig:step29}a. After first sheet, should look like Figure \ref{fig:step29}b.
+
+\begin{figure}[ht!]%
+    \centering
+    \subfloat[Step 29a]{{\includegraphics[width=.3\textwidth]{Trough22} }}%
+    \qquad
+    \subfloat[Step 29b]{{\includegraphics[width=.3\textwidth]{Trough23} }}%
+    \caption{Step 29}%
+    \label{fig:step29}%
+\end{figure}
+
+\item   Repeat steps 26-29 making sure there is about 1” overlap with each new sheet following the parabola. Should resemble Figure \ref{fig:step30}. 
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.4\textwidth]{Trough20.PNG}
+\caption{Step 30}
+\label{fig:step30}
+\end{figure}
+\newpage
+\item  	Cut two sheets of Mylar\textsuperscript{\textregistered}, one to fit to the parabola between T10A and T10B, and another one to fit to the parabola between T10B and T10C. 
+\item   Glue the Mylar\textsuperscript{\textregistered} sheet that was cut to fit between T10A and T10B across the aluminum between T10A and T10B with a spray adhesive. Work very slowly and carefully as the Mylar will crumple easily. Glue with as few wrinkles as possible. Should Resemble Figure \ref{fig:step32}. Hint: To help get a smooth fit of the Mylar to the aluminum use soft objects that wont rip the Mylar to flatten out the wrinkles. 
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.3\textwidth]{Trough21.PNG}
+\caption{Step 32}
+\label{fig:step32}
+\end{figure}
+
+\item   Repeat step 32 between T10B and T10C.
+\item   Place roll insulation around the pipe that is exposed on the outside of T10A and T10C as shown in Figure \ref{fig:step34}. 
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.3\textwidth]{Trough24.PNG}
+\caption{Step 34}
+\label{fig:step34}
+\end{figure}
+
+\end{enumerate}
+
+
+\pagebreak
+\section{Operation of Device}
+
+
+ 
+\begin{enumerate}
+\item Align device towards the sun such that there is no shadow created on the trough by the plywood pieces. The shadow created by the device on the ground should be exactly behind the device as shown in Figure \ref{fig:align}. After orienting the device, secure the wheels to prevent it from rolling. 
+
+\begin{figure}[ht!]%
+    \centering
+     \subfloat[Incorrect alignment]{{\includegraphics[width=.6\textwidth]{align_wrong.jpg} }}%
+    \qquad
+    \subfloat[Correct alignment]{{\includegraphics[width=.6\textwidth]{align_right.jpg} }}%
+    \caption{The shadow of the device must be directly behind the device}%
+    \label{fig:align}%
+\end{figure}
+\newpage
+\item Tilt the device using the bolts on each side, so that the top surface of the trough is perpendicular to the sun. A screw has been placed perpendicularly on the top of the trough and can be used as an indicator. Aim to get the shadow of the screw directly under the screw's head; this ensures that the trough is pointed directly at the sun as shown in Figure \ref{fig:orientationtrough}. Figure \ref{fig:indicator_nail} shows the use of the indicator screw. The angle of tilt will have to be adjusted every 20-30 minutes as the sun changes its position in the sky.
+
+\begin{figure}[ht!]%
+    \centering
+     \subfloat[Incorrect orientation]{{\includegraphics[width=.3\textwidth]{troughexample1} }}%
+    \qquad
+    \subfloat[Correct orientation]{{\includegraphics[width=.3\textwidth]{troughexample} }}%
+    \caption{Diagrams showing correct orientation of trough with respect to the sun (original drawing) }%
+    \label{fig:orientationtrough}%
+\end{figure}
+
+\begin{figure}[ht!]%
+    \centering
+     \subfloat[Incorrect tilt angle]{{\includegraphics[width=.5\textwidth]{nail_wrong.jpg} }}%
+    \qquad
+    \subfloat[Corrected tilt angle]{{\includegraphics[width=.5\textwidth]{nail_corrected.jpg} }}%
+    \caption{The shadow of the indicator screw should ideally not be visible }%
+    \label{fig:indicator_nail}%
+\end{figure}
+\newpage
+\item Wait at least 30 minutes for the device to heat up, ensuring that it maintains a correct angle with respect to the sun. Note that the next step can be completed while waiting.
+\item Begin to load the capsules with plastic. Place approximately 25 to 30 plastic bags within each capsule. After all 6 capsules are filled, load them one by one into the metal pipe as shown in Figure \ref{fig:loaded}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.7\textwidth]{loaded.PNG}
+\caption{A capsule loaded with plastic is entering the pipe}
+\label{fig:loaded}
+\end{figure}
+
+\item Continue aligning the device with the sun while the plastic is melting as instructed in step 2.
+\begin{center}
+\fbox{\begin{minipage}{25em}
+\textbf{Caution: Remember to wear heat safe gloves while handling hot metal or plastic.} 
+\end{minipage}}
+\end{center}
+\item After about 40 minutes check the state of the plastic in the device by taking the extruding rod and forcing out the capsule from the opposite side which it was loaded from. Using proper safety measures (heat protection gloves) check to see if the plastic has melted uniformly; it should be at a paste state with no visible unmelted sections. If not, place the capsule back into the pipe.\\ 
+Note that the time it takes for a capsule to be ready depends on the weather conditions and the time of day. A few trials will be sufficient to give the operator a good feel of how long a capsule needs to remain in the pipe.
+\item When the plastic is in the correct state, remove the plastic from the capsule and place it on a level surface. Roll the plastic against the surface using a pipe or similar shaped object as seen in Figure \ref{fig:rolling}. The rolling motion will decrease the thickness of the plastic and increase its surface area. Continue rolling until an appropriate thickness is reached, which is about half an inch.\\
+Note that this step must be performed as quickly as possible as the material will start to cool down and harden. In case the plastic hardens before acquiring the desired shape, place it back into the capsule and let it heat up to an easy-to-work-with temperature.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.7\textwidth]{rolling.PNG}
+\caption{The rolling process can be done with a pipe or similar shaped object}
+\label{fig:rolling}
+\end{figure}
+
+\newpage
+\item Immediately after the plastic is rolled and flattened, place the plastic into the mold (Figure \ref{fig:mold}) and clamp it down as shown in Figure \ref{fig:clamps}. A heavy object can be used to substitute the clamps.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.6\textwidth]{mold.PNG}
+\caption{The mold consists of the main container and a top. It can also be built out of concrete with the desired dimensions}
+\label{fig:mold}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.7\textwidth]{clamps.PNG}
+\caption{The plastic is clamped down inside the mold}
+\label{fig:clamps}
+\end{figure}
+
+
+\item Allow the plastic to cool off in the mold for 10 minutes.
+\item After the plastic has cooled, remove the clamps or the weight, and remove the plastic from the mold. Use protective gloves as the hardened plastic might still be too hot to touch.
+\item Cut the melted plastic in any shape desired for shingles using a saw.
+\item Repeat process to produce more shingles. The shingles can be arranged together using traditional overlapping technique as shown in Figure \ref{tab:shingle}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.7\textwidth]{shingle_arrengement.jpg}
+\caption{A traditional arrangement of overlapping shingles to create a roof}
+\label{fig:shingle}
+\end{figure}
+\end{enumerate}
+
+
+\pagebreak
+\section{Discussion}
+
+\subsection{Project Readiness}
+The prototype has shown great potential in the initial trials, and by results alone it warrants further research and development. However, it is also understood by the team that the hurdles to implementation are not insignificant. The team believes that although the device is operational and working above expectations, it requires some more development in the following areas before it is ready to be tested in the field. 
+
+\subsection{Improvements}
+A few improvements were identified towards the end of the project and will be considered by the capstone design group in the fall. 
+
+\begin{itemize}
+\item \textbf{Encase the pipe in transparent material.} Using glass or a glass-like material with a high enough melting point to encase the pipe.This improvement would benefit the device twofold as it would remove heat loss due to convection (wind blowing on the pipe) while also turning the area around the pipe into a 'greenhouse', decreasing losses from the pipe further by minimizing the temperature differential between the pipe and the surrounding atmosphere. Glass was the material that was used in a COMSOL model in Appendix B. 
+\item \textbf{Improve adhesion of Mylar\textsuperscript{\textregistered}.} As can be seen in Figure \ref{fig:mylarbubs}, the Mylar\textsuperscript{\textregistered} did not adhere well to the aluminum, resulting in an uneven reflective surface and significant energy losses. Ideally, the reflective surface must have a smooth finish in order to redirect light in the correct direction. Finding an improved application method for the Mylar\textsuperscript{\textregistered} to replace the spray glue would result in a large reduction of energy loss to the atmosphere.
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.7\textwidth]{mylarbubbles}
+\caption{Uneven adhesion of Mylar\textsuperscript{\textregistered} to aluminum resulted in bubbling the material}
+\label{fig:mylarbubs}
+\end{figure}
+\newpage
+\item \textbf{Clamped locking mechanism}. Although the current method of using bolts to lock the device into position works, a simple way to both make it more user friendly while also increasing the range of available positions would be to use a clamping mechanism. This improvement would allow an unlimited range of tilting positions for the trough within its arc, while also reducing the time and effort required to adjust the tilt angle.
+\item \textbf{Replace screws with nuts and bolts}. Considered initially, but due to the fluid nature (i.e. constantly changing) of the design it was not a practical idea to implement until the design was finalized. Being able to construct the device with only wrenches/no power tools would be ideal though, and is something that will be achievable with further iterations of this device. 
+\item \textbf{Weatherproofing the device}. Given that the device will operate outdoors, it will need to be coated with a weatherproofing varnish to maximize its life expectancy, and as a long term solution a new material may need to be chosen. 
+\item \textbf{Using concrete as thermal storage} We have anecdotally been told from CEDC that concrete is a common and cheap building material in Haiti. With this knowledge, consideration should be given in further iterations of the device to use concrete as a 'thermal bank' for the heating system employed. Concrete takes a long time to both heat up and cool down on days of intermittent weather, and this may provide the needed temperature consistency in order to continue melting plastic in cloud cover. 
+
+\end{itemize}
+
+\pagebreak
+\section{Conclusion}
+A solar device for melting plastic and and its resultant plastic product, completed last year by the 2014 Grand Challenges team, was able to be refined and significantly improved upon this year. The device was completely redesigned, changing from a solar oven system to a parabolic trough, which resulted in operational improvements and significantly higher operating temperatures, allowing plastic to be melted under a wider range of weather conditions.\\
+
+\noindent The plastic material was also improved upon by changing the final product to a roofing shingle instead of plastic lumber and by changing the molding process. As a result the strength of the material was increased by over 300\%, making it a valid option for roofing material. \\
+
+\noindent The system described is currently operational and is able to output 4-6 shingles per hour. Optimizations to the device have been identified and output is predicted to increase significantly upon implementation.
+
+
+\newpage
+\section{Acknowledgements}
+The team would like to thank the Grand Challenges team of 2014 for all their work in the initial development of this project. Much of our project this year has been building on your exemplary work, and we hope that our efforts have done justice to the quality of your project.\\
+
+\noindent The team would also like to acknowledge our course professors Dr. Bernal, Dr. Kirkpatrick and Dr. Watt for their enthusiasm for the project, for continually going above and beyond what is required and for expertly straddling the line between giving necessary guidance and allowing us freedom with project choices. 
+
+
+\pagebreak
+\newpage
+\bibliographystyle{IEEEtranN}
+\bibliography{references}
+\appendix
+\pagebreak
+\newpage
+\section{Appendix: Design Selection} \label{App:designselection}
+This section presents the decision process that led the team to the final design. A systems engineering approach was followed to determine possible prototypes and the most appropriate based on the needs of the stakeholders.
+\subsection{Stakeholder Analysis}
+The process began with the determination of the stakeholders and their desired product. The main stakeholders are the person or people using the system (the operators), Haiti's homeless citizens, plastic collectors and the manufacturers of the prototype. The citizens desire a low cost, efficient, easy to use device that can produce a reliable material in a short period of time. Secondary stakeholders are involved in the financial part of the device and those include countries providing foreign aid and the government which will be affected by the long term increase in quality of life. See Figure \ref{fig:stakeholders} for the stakeholder and feature model that shows all stakeholders and their associated features.
+\\
+The stakeholder analysis diagram in Figure \ref{fig:stakeholders} can look confusing, but is simple once one understands how to read it. For example in this diagram the key features that the sewerage cares about are that the system melts plastic, and that the system is environmentally friendly. The operator, however, would be looking for almost every feature in the list except for recyclable and environmentally friendly. The lines that connect a stakeholder to a feature shows that the team believes that the stakeholder will be looking for that feature. Some stakeholders have seemingly conflicting features like robust and easy to use. It might seem that the easier it is for the operator to build, the less robust the structure could be. The truth is there is a balance. There are other steps of the decision process that help show how important a feature is to a certain stakeholder. This diagram helps teams to think about who is influenced by what features, and what features should be considered.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1\textwidth]{stakeholder_and_feature_model.PNG}
+\caption{Stakeholder and feature model of the design}
+\label{fig:stakeholders}
+\end{figure}
+
+\newpage
+\subsection{Functional Architecture}
+
+A logical architecture model was developed to illustrate the functionality of the system in the production of the plastic shingles or building material. It shows how the inputs interact with the prototype, each other and the surroundings in order to reach the final product. The inputs are the words in red boxes, as shown in the architecture model which can be found in Figure \ref{fig:functional_architecture}. They are objects that have a direct impact on the system. The system or controlled volume was set as the device on its own. The main material input is the plastic provided by the operator. The model shows how the plastic is melted, compressed and then molded to form the final product that is the building material. It also presents the required actions by the operator and manufacturer in order for the device to perform its task. The second output is the harmful byproducts that come from the combustion of plastic and cannot be avoided. It is advised that the operator wears a respirator while using the device. The environmental impact of these combustion byproducts although harmful, have been considered insignificant when compared to the benefits of the final product.
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1.3\textwidth]{functional_architecture_final.PNG}
+\caption{The logical architecture model used during design}
+\label{fig:functional_architecture}
+\end{figure}
+\newpage
+
+
+\newpage
+\subsection{Concept Prototype Selection}
+The search for a device that could fit the created models started from the source of energy. After consulting with experts familiar with Haiti's problems, the team decided on a prototype powered entirely out of solar energy. The use of an alternative source of energy is ideal for Haiti, as the cost of operation is close to zero and the other possible options such as charcoal, wood or natural gas, are either too expensive or scarce. Set on the power source and using the stakeholder and feature model,the functional architecture model along with further research and concept generation, the team developed four main concept prototypes. The first big decision made was the use of a parabolic trough instead of a solar dish. Researched showed that the most commonly used shape of reflective panels used in the industry is a trough or a parabola. On the other hand, a solar dish has the ability to concentrate large amounts of energy on a single point. The decision was taken based on constructibility and portability. Since the goal was to be able to ship the device to Haiti in order to test it, a trough seemed a much more feasible option as it can be dissembled to small parts that take up a small shipping volume. Nonetheless, the amount of energy concentrated by a solar dish made this design very attractive and was included in the prototype comparison.\\
+\\
+\subsubsection{The Four Concept Prototypes}
+
+\textit{Deconstructable metal pipe cot:} The idea came from a military cot that is made out of metal cylinders that can be recreated by metal pipes. The metal pipes would be placed in a way such that the reflective material can be freely suspended and naturally create a parabolic shape. The pipe containing the plastic would be placed at the focal point inside the trough. A great advantage of this design is the ability to be compressed down to a small rectangular piece that would be ideal for transporting it to Haiti. The choice of metal as material was appropriate for Haiti as it is in abundance. This concept was the winner between the four and the metal pipes were replaced by PVC pipes for ease of construction. A rough model of this design can be found in Figure \ref{fig:initial_prototype}. \\
+\\
+
+\noindent \textit{Concrete base cot:} The concrete base cot is a very similar design as the first one but the main material used is concrete. There is a horizontally aligned trough and the pipe with the plastic is placed in the focal point. A disadvantage of this design is that it would have to be constructed in Haiti and would not be deconstructable. A rough model of this design can be found in Figure \ref{fig:initial_prototype}.\\
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.8\textwidth]{initial_prototype.png}
+\caption{A rough model of the cot concept prototypes}
+\label{fig:initial_prototype}
+\end{figure}
+\newpage
+\noindent \textit{Solar dish with oven}: This design was inspired from a pizza style oven and a satellite dish. A dish or umbrella shaped reflective material would focus the rays of the sun on a concrete oven where the plastic would be heated inside a mold. Advantages of this design were the ability to make multiple shingles in parallel. The oven would provide a uniform heating pattern on the molds heating the plastic throughout. The high thermal capacity of concrete would keep the heat on the inside of the oven for a significant amount of time so that the device would not be affected as much by short periods of cloudy weather. The main drawback of this concept is the fragile design of the umbrella or dish and the focal point being limited to a single point. A rough model of this design can be found in Figure \ref{fig:dish_oven}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1\textwidth]{dish_oven.png}
+\caption{A rough model of the solar dish with oven concept}
+\label{fig:dish_oven}
+\end{figure}
+\newpage
+\noindent \textit{Solar dish with hot rollers}: The last design was the least developed and it involved a dish or umbrella with a reflective material, heating up a hot-rolling device with a hopper on top. The plastic would be added into the hopper and the heated bottom would melt the plastic that would later go through two hand-turned rollers that would create a thin plastic sheet. Later in the design process, two hot rollers were tested on cool, compressed plastic bags and they failed to melt the plastic in the appropriate form. If this design was to be pursued, a better way of compressing the bags would have to be developed before they are heated.
+
+
+\subsubsection{Concept Screening}
+The four concept prototypes were compared using a rating system that associates the features that the stakeholders desire along with weighted rates. The ability of the device to melt plastic was set as the most important feature as this is the primary goal of this project. Safety was given second place for obvious reasons and the next most important ones, robustness, repairable, easy to build, easy to use, repairable, production speed were based on Haiti's economic and education levels. Each prototype received a rating out of 10 for each feature, with 10 being the best score. These ratings were determined by the team taking account the materials used in each prototype and the different methods used in each one. The detailed ratings can be seen in Figure \ref{fig:prototype_comparison}.\\
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1.2\textwidth]{Prototype_rating.PNG}
+\caption{Concept prototype comparison}
+\label{fig:prototype_comparison}
+\end{figure}
+\noindent The deconstructable metal pipe cot received the highest score and the team proceeded with developing the details for the prototype.
+\subsection{Construction of First Prototype}
+
+The winning prototype was inspired by a military cot that can be seen in Figure \ref{fig:milcot}. Aluminum sheets were chosen to be the reflective material used as they are stiff enough to hold their own weight but still able to be shaped as a parabola. The initial idea was to recreate the military cot using metal pipes but they were replaced with PVC pipes that are lighter, cheaper and easier to put together and would be easier to be sent to Haiti for testing. The team also wanted to find a folding mechanism that would make the device more portable and take up less space.\\
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.8\textwidth]{military-cot.jpg}
+\caption{A military cot served as an inspiration for the prototype}
+\label{fig:milcot}
+\end{figure}
+\newpage
+\noindent Using the heat calculations, the equivalent circuit, and the COMSOL models, the dimensions of the trough were determined as well as the exact position of the focal point. The first attempt to create a parabola with the exact dimensions required, used three pipes: two of them were the base and created an "x" while the third one connected the top ends of pipes and was pulled down using strings. This design (Figure \ref{fig:strings}) failed as the ends of the PVC were not strong enough to hold the tension forces. In one case, the top pipe folded in the middle, unable to withstand the bending moment applied.
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1\textwidth]{string.jpg}
+\caption{Failed attempt to create a parabola using strings}
+\label{fig:strings}
+\end{figure}
+\newpage
+\noindent The next attempt to create a parabola out of PVC pipes used a heat gun to shape the top pipe into the exact shape. A parabola was drawn on a plywood sheet and nails created a mold where the straight pipe was forced into and later heated (Figure \ref{fig:board}). The pipe would then be taken out of the mold and would keep the parabolic shape. 
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1\textwidth]{board_nails.png}
+\caption{PVC pipe kept a parabolic shape with some heating, and the use of screws to hold the shape while heating}
+\label{fig:board}
+\end{figure}
+\newpage
+\noindent Five of those 3-pipe sets were made and aluminum sheet was supported in between them. Two adjustable supports were made out of PVC pipes and put into two buckets of sand in order to support the metal pipe with the plastic at the focal point. The height adjusting mechanism was created so that the device could tilt and follow the movement of the sun throughout the day while keeping the metal pipe always at the focal point. The metal pipe was painted black on the bottom and coated with fiberglass insulation at the top to maximize heat transfer on the bottom but minimize heat loss at the top. The constructed prototype can be seen in Figure \ref{fig:PVCprototype}.\\
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1\textwidth]{final_prototype.jpg}
+\caption{The constructed prototype out of PVC pipes}
+\label{fig:PVCprototype}
+\end{figure}
+
+\newpage
+\noindent Although the use of PVC pipes create plenty of advantages for this design such as lightweight and portable, the constructed final prototype had some major flaws. The total structure was very flimsy and unstable. It was shaped such that it was almost impossible to keep the total surface of the aluminum reflecting light onto the pipe. The parabola created by the heated PVC pipes was not the exact mathematical parabola required for the device to function. Due to these reasons, further design work was required that led to the final prototype.
+
+\newpage
+\section{Appendix: COMSOL Modeling}
+This section contains the final COMSOL models the team created. COMSOL is a finite element software. This software was used to model the heat flow through various materials and shapes. The use of COMSOL eventually lead to the final design. The models showed how much power would be required, how to get a more even distribution in the pipe, and how to protect against gusts of wind that would cool the pipe.
+\subsection{Model of Pipe}
+The model consists of an inner aluminum pipe, which represents the capsule's with HDPE plastic, located inside the focal pipe. This pipe has an inner diameter of 0.0222 m and outer diameter of 0.0255m and a thickness 0.00165 m. Covering the top half of the steel pipe is a half inch of fiberglass insulation. There is an air cushion of 0.0222 m in between the focal pipe and the capsule. There is heat flow in at the bottom of the pipe to represent the light reflected onto the bottom of the pipe. Figure \ref{fig:COMSOL Heat Flow} shows the pipe with a wind speed of 0 m/s across it. Figure \ref{fig:COMSOL Heat Flow W} shows the same pipe with a 2 m/s wind speed blowing across the pipe. These two models show the impact that wind has on the system. Figure \ref{fig:COMSOL Time} shows how long the plastic must be kept in the system to reach the proper temperature.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{temp.PNG}
+\caption{The COMSOL model showing heat distribution through the focal pipe, while the capsules are inside.}
+\label{fig:COMSOL Heat Flow}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{tempwind.PNG}
+\caption{This COMSOL model reflects the same as the models above, but with a wind speed of 2 m/s blowing across the pipe and insulation}
+\label{fig:COMSOL Heat Flow W}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Timegraph.PNG}
+\caption{The COMSOL model showing the time it would take the pipe to raise to temperature with the capsules inside}
+\label{fig:COMSOL Time}
+\end{figure}
+The models above show that a power input of $2800 W/m^2$ with no wind will heat the pipe to the 430 degrees Kelvin, 160 degrees Celsius in 75 minutes. With a wind speed of 2 m/s and a power input of $2800 W/m^2$, the temperature of the pipe drops dramatically such that the steady state temp is $90\degree C$. This means that to reach $160\degree C$ on a windy day, either the power input must increase from $2800 W/m^2$ to $5500 W/m^2$, or a shelter, such as a glass box, be placed around the pipe.
+\subsection{Model of Pipe With Glass Box}
+This model is the same, but with a glass box added around the pipe to protect from the wind. The box is 0.15 m on each side and 0.01 m thick. The material used was a window pane glass.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Boxtemp.PNG}
+\caption{The COMSOL model showing heat distribution through the focal pipe, while the capsules are inside, with a glass box surrounding the pipe}
+\label{fig:cshfwithbox}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Boxtime.PNG}
+\caption{The COMSOL model showing the time it would take the pipe to raise to temperature with the capsules inside, with a box around the pipe.}
+\label{fig:COMSOL Box Time}
+\end{figure}
+
+\noindent Adding the box made drastic changes. The input power required to reach $160^{\circ}C$ is $650 W/m^2$, which is considerably less than without the box. The time taken to reach temperature is, however, two hours compared to 75 minutes, which is illustrated in Figure \ref{fig:COMSOL Box Time}. The box traps more heat in addition to blocking the wind, allowing for less power input to achieve the same temperature. The box also, however, slows down the process of heating the pipe because of the air insulation inside the box.
+\subsection{Conclusion}
+The COMSOL models showed how much power was needed to melt the plastic in the pipe. This in turn then determined how much surface area was required to obtain enough power from the sun. The glass box could be an addition that would improve the efficiency of the system, as well as protect against the wind. The trough has some shelter from wind already built in, with the plywood on the sides. In Haiti, the winds could be stronger so a glass box may be necessary; however, in Haiti the sun will be even stronger than it is in Indiana. As such, the kit could be tested in Haiti without the glass box, but will be considered in the future iterations of the design.
+\label{App:AppendixB}
+
+\section{Product Testing} 
+\label{App:AppendixC}
+We tested how long it would take the solar trough to reach a steady state temperature with air. We first took it outside and followed the instructions on how to adjust the trough so it was perpendicular with the sun’s rays. We tested the device with air instead of plastic because it has a lower heat capacity and therefore assumed had the lower time constant represented by the following equation:
+
+\begin{equation}\label{second}
+T(t)=A*(1-e^{\frac{-t}{\tau}})+T_0
+\end{equation}
+where A is a constant, T(t) is the temperature at a given time, and $T_0$ is the initial temperature, and $\tau$ is the time constant.
+
+With testing of air we insulated the whole pipe with half an inch of fiberglass. Half of the trough was just aluminum sheeting and the other was covered with Mylar\textsuperscript{\textregistered}. We collated data for about 30 minutes for the Mylar\textsuperscript{\textregistered} and 20 minutes with the aluminum.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.8]{testing.png}
+\caption{Data collected over time from both ends of the pipe. Blue is the Mylar\textsuperscript{\textregistered} and orange is the aluminum. No error bars were used in this graph}
+\label{fig:Data from Pipe}
+\end{figure}
+
+ Using Excel we were able to form an accurate equation in the form of Equation 1 to fit the data in Figure \ref{fig:Data from Pipe}. For the aluminum half of the trough, the value of 'A' was approximately 20 and the time constant ($\tau$) was around 7s. For the Mylar\textsuperscript{\textregistered} covered half of the trough, A was around 93 while the time constant is approximately 13s. The time to heat the pipe was faster for the aluminum than it was for the Mylar\textsuperscript{\textregistered} but the max temperature is cooler. The maximum temperature is calculated by taking the value from A and add it to the initial temperature, thus Mylar\textsuperscript{\textregistered} would reach a temperature of around 190\degree C once it reached steady state and the aluminum would be close to 100\degree C. Based on this test, the Mylar\textsuperscript{\textregistered} coating would have enough heat to cause the plastic to melt which is around 140\degree C. The waiting time for plastic to melt would follow the same type of curve from the air. The difference would be it would have a higher time constant with using the values gathered for LDPE and HDPE we determined that it would take approximately 40 to 60 minutes to melt the plastic.
+
+\subsection{Strength Test of Plastic}
+The goal for this test was to figure out how much force our shingles can take and compare them to last year’s plastic lumber material.  We used a universal testing machine to measure the ultimate tensile strength (UTS) of three samples, two of this year’s product and one from last year.  Figure \ref{fig:Strength Test Samples} shows the samples from testing.  
+\begin{figure}[h!]
+\centering
+\includegraphics[width=.5\textwidth]{Test_Strips.png}
+\caption{ Samples used for testing. The two leftmost samples are from this year and the one on the right is from last year}
+\label{fig:Strength Test Samples}
+\end{figure}
+
+To perform this test we first clamped in the sample and zeroed the machine.  Then, we started the machine so it would pull the sample apart. This setup can be seen in Figure \ref{fig:tensiletest1}.  We kept the machine running until one of two things happen: the sample breaks apart or the device reaches its threshold. Figure \ref{fig:Strength Test} shows an example of the latter option.
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.5\textwidth]{tensiletest1.jpg}
+\caption{Tensile testing of plastic}
+\label{fig:tensiletest1}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=.5\textwidth]{Strength_Test.png}
+\caption{ Example of when to stop when the machine hits it threshold}
+\label{fig:Strength Test}
+\end{figure}
+
+\newpage
+The test had promising results.  Both of this year’s sample pieces can withstand a stress of approximately 8 MPa.  With the size of the two samples tested, this means that the samples could hold a 100 kg weight and won’t break.  Last year’s sample did not do well compared to this year as it was only able to take a tensile strength of approximately 1.6 MPa. Figure \ref{fig:Stress Strain Curve} and Figure \ref{fig:First Test Samples} are plots of this year's sample. Figure \ref{fig:Second Test Samples} is a plot of last year's sample.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{StressvStrain.png}
+\caption{ This is the stress vs. strain curve of the sample on the left in Figure \ref{fig:Strength Test Samples}.  No error bars were used in this plot}
+\label{fig:Stress Strain Curve}
+\end{figure}
+
+In Figure \ref{fig:Strength Test} there are two linear sections from approximately 0.03 to 0.12 and 0.21 to 0.28.  These represent the Young’s Modulus, the amount of stress an object can take and return to its original shape.  This shows us that the plastic bags we melted a mix of two plastics, LDPE and HDPE.
+
+
+\subsection{Additional Graphs}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{StressvStrain2.png}
+\caption{ Sample second from the left in Figure \ref{fig:Strength Test Samples}. This sample was able to stretch more than the sample used in Figure \ref{fig:Stress Strain Curve}}
+\label{fig:First Test Samples}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{StressvStrain3.png}
+\caption{ Sample on the right in Figure \ref{fig:Strength Test Samples}.  This was last year’s sample and it is stiffer than this year’s but is unable to take as much stress}
+\label{fig:Second Test Samples}
+\end{figure}
+\newpage
+
+These two graphs in Figures \ref{fig:First Test Samples} and \ref{fig:Second Test Samples} are the other two samples that were tested. 
+\section{Heat Calculations and Assumptions}
+\subsection{Assumptions}
+\label{App:modeling}
+The following assumptions were made for the modeling of the heat flow in the pipe filled with plastic: 
+\begin{enumerate}
+\item Steady State with respect to energy 
+\item  Air inside the steel pipe is conductive with a heat transfer coefficient of 26.3 $\frac{W}{m*K}$
+\item  Aluminum pipe is located in the center of the steel pipe
+\item  Air outside of the steel pipe is convective with a heat transfer coefficient of 7 $\frac{W}{m^2*K}$
+\item  Insulation does not radiate heat
+\item  Heat is conductive around the pipes with a conductive heat transfer coefficient of 43 $\frac{W}{m*K}$ for the steel pipe, 167 $\frac{W}{m*K}$ for the aluminum pipe, and 26.3 $\frac{W}{m*K}$ for air inside the steel pipe
+\item  The steel pipe is painted flat, enamel black with $\epsilon$ = 0.8
+\item  Plastic is a 50/50 mix of LDPE and HDPE for the thermal conductivity of the plastic bags
+\item  Temperature of the plastic is 160 degrees C ($T_5$)
+\item  Ambient temperature is 25 degrees C ($T_{amb}$)
+\end{enumerate} 
+
+\subsection{List of Variables}
+\begin{center}
+\setlength{\extrarowheight}{7.5pt}
+\begingroup
+%\renewcommand\arraystretch{1}
+\begin{longtable}{|l|l|l|}
+\caption[ Variable List]{} \label{grid_mlmmh} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{Variable}} & \multicolumn{1}{c|}{\textbf{Description}} & \multicolumn{1}{c|}{\textbf{Units}} \\ \hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Variable}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{Units}} \\ \hline 
+\endhead
+
+\hline \multicolumn{3}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot \\ \hline
+ $t_{steel}$&Thickness of the steel pipe & m \\ \hline
+ $t_{Al}$&Thickness of the aluminum pipe & m \\ \hline
+ $L_{steel,around}$&Half the outside circumference of the steel pipe & m \\ \hline
+ $L_{Al,around}$&Half the outside circumference of the aluminum pipe & m \\ \hline
+ $L_{air,around}$&Half the outside circumference of the air between the pipes & m \\ \hline
+ $L_{plastic}$&Inside diameter of the aluminum pipe & m \\ \hline
+ $L_{insulation}$&Thickness of the fiberglass insulation & m \\ \hline
+ $K_{Al}$&Thermal conductivity of the aluminum pipe&$\frac{W}{m*K}$\\ \hline
+ $K_{steel}$&Thermal conductivity of the steel pipe&$\frac{W}{m*K}$\\ \hline
+ $K_{air}$&Thermal conductivity of the air&$\frac{W}{m*K}$\\ \hline
+ $K_{insulation}$&Thermal conductivity of the insulation&$\frac{W}{m*K}$\\ \hline
+ $K_{plastic}$&Thermal conductivity of the plastic&$\frac{W}{m*K}$\\ \hline
+ $\epsilon_{1}$&Emissivity of the steel pipe&Unitless \\ \hline
+ $\epsilon_{2}$&Emissivity of Mylar\textsuperscript{\textregistered}&Unitless \\ \hline
+$\Theta$&Stefan-Boltzmann constant&$\frac{W}{m^2*K^4}$\\ \hline
+ $h_{air}$&Heat transfer coefficient of air&$\frac{W}{m^2*K}$\\ \hline
+ $T_{1}$&Temperature of steel pipe at the bottom, outside& K\\ \hline
+ $T_{2}$&Temperature of steel pipe at the bottom, inside& K\\ \hline
+ $T_{3}$&Temperature of aluminum pipe at the bottom, outside& K\\ \hline
+ $T_{4}$&Temperature of plastic at the bottom& K\\ \hline
+ $T_{5}$&Temperature of plastic at the top& K\\ \hline
+ $T_{6}$&Temperature of aluminum pipe at the top, outside& K\\ \hline
+ $T_{7}$&Temperature of steel pipe at the top, inside& K\\ \hline
+ $T_{8}$&Temperature of steel pipe at the top, outside& K\\ \hline
+ $T_{9}$&Temperature of insulation on the top& K\\ \hline
+ $T_{amb}$&Ambient Temperature& K\\ \hline
+ $Q_{1}$&Heat flux going around the air layer&$\frac{W}{m^2}$\\ \hline
+ $Q_{2}$&Heat flux going through the air layer at the bottom&$\frac{W}{m^2}$\\ \hline
+ $Q_{3}$&Heat flux going around the aluminum pipe&$\frac{W}{m^2}$\\ \hline
+ $Q_{4}$&Heat flux through aluminum pipe at the bottom and plastic&$\frac{W}{m^2}$\\ \hline
+ $Q_{5}$&Heat flux going through the aluminum pipe at the top&$\frac{W}{m^2}$\\ \hline
+ $Q_{6}$&Heat flux going through the air layer at the top&$\frac{W}{m^2}$\\ \hline
+ $Q_{7}$&Heat flux going through the steel pipe and insulation&$\frac{W}{m^2}$\\ \hline
+ $Q_{8}$&Heat flux due to convection&$\frac{W}{m^2}$\\ \hline
+ $Q_{9}$&Heat flux due to radiation off the Mylar\textsuperscript{\textregistered}&$\frac{W}{m^2}$\\ \hline
+ $Q_{in}$&Heat flux going into system&$\frac{W}{m^2}$\\ \hline
+ $Q_{out}$&Heat flux going out of system&$\frac{W}{m^2}$\\ \hline
+ $Q_{air}$&Heat flux of air outside of the steel pipe&$\frac{W}{m^2}$\\ \hline
+ $Q_{plastic}$&Heat flux through the steel pipe&$\frac{W}{m^2}$\\ \hline
+ $Q_{steel}$&Heat flux going around the steel pipe&$\frac{W}{m^2}$\\ \hline
+ $Q_{RAD}$&Heat flux due to radiation from the steel pipe&$\frac{W}{m^2}$\\ \hline
+ $Q_{air,R}$&Heat flux of air layer from the right&$\frac{W}{m^2}$\\ \hline
+ $Q_{air,L}$&Heat flux of air layer from the left&$\frac{W}{m^2}$\\ \hline
+ $Q_{Al,R}$&Heat flux from the aluminum pipe from the right&$\frac{W}{m^2}$\\ \hline
+ $Q_{Al,L}$&Heat flux from the aluminum pipe from the left&$\frac{W}{m^2}$\\ \hline
+ $Q_{S,R}$&Heat flux from the steel from the right&$\frac{W}{m^2}$\\ \hline
+ $Q_{S,L}$&Heat flux from the steel from the left&$\frac{W}{m^2}$\\ \hline
+\end{longtable}
+\end{center}
+\endgroup
+\subsection{Equations}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.2\textwidth]{Equivalent_circuit.png}
+\caption{The thermal resistance equivalent circuit of the pipe.}
+\label{fig:Equivalent_circuit}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{Pipe_Cross_Section}
+\caption{Cross section of the pipe relating to the equivalent circuit.}
+\label{fig:Pipe_Cross_Section}
+\end{figure}
+\newpage
+ \label{App:modeling}
+In the following equations $\epsilon_1$ is steel and $\epsilon_2$ is Mylar\textsuperscript{\textregistered}. These equations were generated from Figure \ref{fig:Equivalent_circuit}, which shows the equivalent electrical circuit. Each resistor represents a material that the heat passed through. The equations generated are as follows: \\
+\begin{equation}\label{third}
+%Hi Dimitris 
+T_1-T_2=Q_{plastic}*(\frac{t_{steel}}{k_{steel}})
+\end{equation}
+\begin{equation}\label{fourth}
+T_2-T_3=Q_2*(\frac{L_{air}}{k_{air}})
+\end{equation}
+\begin{equation}\label{fifth}
+T_2-T_6=Q_{air_R}*(\frac{L_{air around}}{k_{air}})
+\end{equation}
+\begin{equation}\label{sixth}
+T_2-T_6=Q_{air_L}*(\frac{L_{air around}}{k_{air}})
+\end{equation}
+\begin{equation}\label{seventh}
+T_3-T_4=Q_{4}*(\frac{t_{Al}}{k_{Al}})
+\end{equation}
+\begin{equation}\label{eigth}
+T_4-T_5=Q_{4}*(\frac{L_{plastic}}{k_{plastic}})
+\end{equation}
+\begin{equation}\label{ninth}
+T_3-T_5=Q_{Al_R}*(\frac{L_{Al around}}{k_{Al}})
+\end{equation}
+\begin{equation}\label{tenth}
+T_3-T_5=Q_{Al_L}*(\frac{L_{Al around}}{k_{Al}})
+\end{equation}
+\begin{equation}\label{eleventh}
+T_5-T_6=Q_{5}*(\frac{t_{Al}}{k_{Al}})
+\end{equation}
+\begin{equation}\label{twelfth}
+T_6-T_7=Q_{6}*(\frac{L_{air}}{k_{air}})
+\end{equation}
+\begin{equation}\label{thirteenth}
+T_1-T_7=Q_{S_R}*(\frac{L_{steel around}}{k_{Steel}})
+\end{equation}
+\begin{equation}\label{fourteenth}
+T_1-T_7=Q_{S_L}*(\frac{L_{steel around}}{k_{Steel}})
+\end{equation}
+\begin{equation}\label{fifteenth}
+T_7-T_8=Q_{7}*(\frac{t_{steel}}{k_{steel}})
+\end{equation}
+\begin{equation}\label{sixteenth}
+T_8-T_9=Q_{7}*(\frac{L_{insulation}}{k_{insulation}})
+\end{equation}
+\begin{equation}\label{seventeenth}
+T_9-T_{amb}=Q_{8}*(\frac{1}{h_{air}})
+\end{equation}
+\begin{equation}\label{eighteenth}
+T_1-T_{amb}=Q_{air}*(\frac{1}{h_{air}})
+\end{equation}
+\begin{equation}\label{nineteenth}
+(T_1)^4-(T_{amb})^4=\frac{Q_{rad}}{\epsilon_1 \sigma}
+\end{equation}
+\begin{equation}\label{twenty}
+Q_{in}=Q_{air}+Q_{plastic}+Q_{steel}+Q_{rad}
+\end{equation}
+\begin{equation}\label{twentyone}
+Q_{plastic}=Q_{1}+Q_{2}
+\end{equation}
+\begin{equation}\label{twentytwo}
+Q_{1}=Q_{air_R}+Q_{air_L}
+\end{equation}
+\begin{equation}\label{twentythree}
+Q_{2}=Q_{3}+Q_{4}
+\end{equation}
+\begin{equation}\label{twentyfour}
+Q_{3}=Q_{Al_R}+Q_{Al_L}
+\end{equation}
+\begin{equation}\label{twentyfive}
+Q_{4}+Q_{Al_R}+Q_{Al_L}=Q_{5}
+\end{equation}
+\begin{equation}\label{twentysix}
+Q_{5}+Q_{air_R}+Q_{air_L}=Q_{6}
+\end{equation}
+\begin{equation}\label{twentyseven}
+Q_{steel}=Q_{S_R}+Q_{S_L}
+\end{equation}
+\begin{equation}\label{twentyeight}
+Q_{6}+Q_{S_R}+Q_{S_L}=Q_{7}
+\end{equation}
+\begin{equation}\label{twentynine}
+Q_{7}=Q_{8}+Q_{9}
+\end{equation}
+\begin{equation}\label{thirty}
+(T_9)^4-(T_{amb})^4=\frac{Q_8}{\epsilon_2 \sigma}
+\end{equation}
+\begin{equation}\label{thirtyone}
+T_5=160^{\circ} C
+\end{equation}
+\begin{equation}\label{thirtytwo}
+T_{amb}=25^{\circ} C
+\end{equation}
+\begin{equation}\label{thirtythree}
+Q_{rad}+Q_{air}+Q_{8}+Q_9=Q_{out}
+\end{equation}
+The equations help to figure out what the heat required per area to have the plastic maintain at 160 degrees C at the top of the aluminum pipe which is about 2400 $\frac{W}{m^2}$.  This is to ensure that the plastic is melted throughout the pipe and be molded easily when it exits the pipe. This a lower value compared to the COMSOL model in Appendix B with a value of about 2800 $\frac{W}{m^2}$.  This could be that COMSOL has more accurate assumptions and property values than what was used in the hand calculations.
+\end{document}
+
+% * <lawtons@rose-hulman.edu> 2015-08-04T18:16:29.868Z:
+%
+% 
+%

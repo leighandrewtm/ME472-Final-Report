@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.3 (9/9/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%       PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[paper=letter, fontsize=12pt]{article}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+\usepackage{blindtext}
+\usepackage{amssymb,amsmath}
+\usepackage[numbers]{natbib}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{gensymb}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+%\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\usepackage{titlesec} % Allows customization of titles
+
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+
+\fancyhead[C]{Rose-Hulman Institute of Technology $\bullet$ August 21 2015 $\bullet$ Grand Challenges for Engineering } % Custom header text
+
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+%----------------------------------------------------------------------------------------
+%       TITLE SECTION
+%----------------------------------------------------------------------------------------
+\title{\vspace{-15mm}\fontsize{16pt}{10pt}\selectfont\textbf{Summer 2015 Grand Challenges Program 
+\fontsize{26pt}{10pt}\selectfont Repurposing Plastic Refuse in Haiti}} % Article title
+\author{
+\large
+{\textsc{Jared Falk, \textit{Sophomore Mechanical Engineer}, \textnormal{Manager} }}\\[2mm]
+{\textsc{Stephen Housman, \textit{Senior Chemical Engineer}, \textnormal{Lead Researcher} }}\\[2mm]
+{\textsc{Steven Lawton, \textit{Junior Mechanical Engineer}, \textit{Lead Speaker} }}\\[2mm]
+{\textsc{Leigh Mathews, \textit{Graduate Mechatronics Engineer}, \textit{Lead Writer} }}\\[2mm]
+{\textsc{Christopher Schenck, \textit{Junior Mechanical Engineer}, \textit{Construction Lead} }}\\[2mm]
+{\textsc{Dimitris Valioulis, \textit{Senior Civil Engineer}, \textit{Customer Liason} }}\\[2mm]
+}
+ % Your email address}
+\date{}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+\maketitle % Insert title
+\thispagestyle{fancy} % All pages have headers and footers
+
+\section*{Executive Summary}
+The 2014 Rose-Hulman Grand Challenges engineering team completed a project in July 2014, involving the design and build of a solar powered device that took plastic refuse and converted it into plastic lumber as a building material for Haiti \cite{piens2015engineering} As a result, the 2015 Grand Challenges team continued their research, and have designed, built and tested a new plastic cooker: a solar trough, along with continuing the development of the plastic material and the final product. \\
+
+\noindent Currently the poorest country in the Western Hemisphere and still feeling the impact of the devastating 2010 earthquake that took over 200,000 lives, homelessness and poor sanitation are major issues in modern-day Haiti \cite{income}. Sanitation issues are compounded by large amounts of excess plastic rubbish being left to mingle with sewage and stagnant water. The motivation for the project is to help alleviate these two pressing concerns: homelessness and excess plastic garbage, with the one device. 
+
+\subsubsection*{Product: Roofing Shingles}
+Upon consultation with Clemson Engineers for Developing Countries (CEDC), the material produced was modified from plastic lumber to roofing shingles, as the CEDC engineers working on the ground in Haiti identified a potential need for a replacement roofing material for corrugated iron. The plastic shingles being made are approximately 7"x11"x1/2", with each shingle requiring 25-30 plastic trash bags to make. Tough, flexible, waterproof and insulative, recycled LDPE/HDPE shingles  hold high promise as a roofing material, and further testing for its durability and longevity is planned for future work. 
+
+\subsubsection*{Device: Solar Trough}
+The built design for 2015 is a parabolic solar trough (shown in Figure 1) which, when aligned correctly, collects  available solar energy and focuses it on a pipe held at the focal point of the trough, heating the pipe to a temperature high enough to melt plastic. The device is capable of reaching temperatures as high as 187\degree C, with temperatures consistently above 140 \degree C. Current melting capacity of the trough allows production of 2-6 shingles per hour, with capacity dependent on weather conditions. Clear days above 30 \degree C have correlated with 140\degree C+ temperature on the device in the Midwest.
+\subsubsection*{Build and Operate}
+This device, delivered in a flat-packed kit form, is designed to be constructed with 3 people and requires the use of a power drill to assemble. The kit costs approximately \$450 and includes all the tools necessary to operate the device. Operation requires two people and further optimizations included in future work are predicted to decrease the number of operators required to one. 
+\subsubsection*{Future Improvements}
+The design is currently operational, and is able to be optimized further with several ideas for modifications already in development. The team is confident that this project can become a genuine option as an alternative roofing material to corrugated iron. 
+
+  \begin{figure}[ht!]
+\centering
+\includegraphics[width=.85\textwidth]{final}
+\caption{Final Prototype}
+\label{fig:finalproto}
+\end{figure}
+
+
+\bibliographystyle{IEEEtranN}
+\bibliography{references}
+\end{document}
